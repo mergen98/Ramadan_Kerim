@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ramadan Kareem | Animated Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <img src="img/mosque.jpg" class="mosque" />
+      <header>
+        <a href="#" class="logo">Ramadan</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+          <li><a href="#" style="--i: 1" class="active">Home</a></li>
+          <li><a href="#" style="--i: 2">About</a></li>
+          <li><a href="#" style="--i: 3">Calendar</a></li>
+          <li><a href="#" style="--i: 4">Blog</a></li>
+          <li><a href="#" style="--i: 5">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>Happy Ramadan Kareem</h2>
+          <p>
+            The five daily prayers and from one Friday prayer to the next Friday
+            prayer, and from one Ramadan to the next are an expiation for
+            whatever (sins) come in between, so long as one avoids major sins.
+          </p>
+          <p class="sahih">Sahih Muslim</p>
+          <a
+            href="https://www.islamicfinder.org/hadith/muslim/purification/551/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a
+            href="https://vk.com/serdaratamuradov24"
+            target="_blank"
+            style="--i: 12"
+            ><img src="img/Vk.com_icon-icons.com_55781.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://t.me/Sardor99dz" target="_blank" style="--i: 13"
+            ><img src="img/telegram_icon_178920.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/serdarbek99dz/?hl=ru"
+            target="_blank"
+            style="--i: 14"
+            ><img src="img/social_media_instagram_ig_logo_icon_141109.png"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const navigation = document.querySelector(".navigation");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
